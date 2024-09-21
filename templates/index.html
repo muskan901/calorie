@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calorie counter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Calorie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/check">Check</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+          {% comment %} <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li> {% endcomment %}
+        </ul>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <p><a class="btn btn-lg btn-primary" href="/login">Login</a></p>
+          <p><a class="btn btn-lg btn-primary" href="/signup">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+  <div id="myCarousel" class="carousel slide py-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/c.png" class="bd-placeholder-img" width="100%" height="600px" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="text-dark">Good health starts with what you eat.</h1>
+            <p><a class="btn btn-lg btn-primary" href="/signup">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/c2..png" class="bd-placeholder-img" width="100%" height="600px" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="text-dark">Want to eat more mindfully?</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/c3.png" class="bd-placeholder-img" width="100%" height="600px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 class="text-dark">Track meals, learn about your habits, and reach your goals.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container py-4 mb-3">
+  <h1 class="text-center"><strong>The Tools for Your Goals</strong></h1>
+  </div>
+
+  <div class="container marketing my-3">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <img src="static/dairy.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <h2 class="fw-bold">Learn. Track. Improve.</h2>
+        <p class="fs-5">Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img src="static/barcode.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <h2 class="fw-bold">Logging Simplified.</h2>
+        <p class="fs-5">Scan barcodes, save meals and recipes, and use Quick Tools for fast and easy food tracking.</p>
+      
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img src="static/shoe.svg" class="bd-placeholder-img rounded-circle" width="140" height="140"  role="img" aria-label="Placeholder" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <h2 class="fw-bold">Stay Motivated.</h2>
+        <p class="fs-5">Join the World’s Largest Fitness Community for advice, tips, and support 24/7.</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider mb-5">
+
+    <h1 class="text-center"><strong>Stay Motivated</strong></h1>
+    <p class="text-center fs-5 w-400px mb-5">Get nutritionist-approved recipes and motivational workout tips <br>from experts.</p>
+
+    <div class="row featurette">
+      <div class="col-md-7 mt-5">
+        <h2 class="featurette-heading fw-normal lh-1 text-center">Commit yourself</h2>
+        <p class="fs-4 text-center">People who make a public commitment are more likely to succeed. The more people who know you desire to reduce weight, the harder you will work.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="static/commit.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-5" width="500" height="500" role="img" aria-label="Placeholder: 500x500" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider my-5">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 mt-5">
+        <h2 class="featurette-heading fw-normal lh-1 text-center">Do not focus only on the scale </h2>
+        <p class="fs-4 text-center">The scale is only one method for tracking progress. You may have weighed yourself two weeks ago and dropped five pounds, but this week, you may gain two or more pounds.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="static/calorie5.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider my-5">
+
+    <div class="row featurette">
+      <div class="col-md-7 mt-5">
+        <h2 class="featurette-heading fw-normal lh-1 text-center">Find a mentor or partner </h2>
+        <p class="fs-4 text-center">Look for someone who will challenge you to your limits. A mentor will instruct you on what to do and how to accomplish it. If you cannot find a mentor, look for a workout buddy who pushes you to exercise every day.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="static/mentor.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider my-5">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 mt-5">
+        <h2 class="featurette-heading fw-normal lh-1 text-center">Join a support group </h2>
+        <p class="fs-4 text-center">Doing it alone is challenging, and there are several online and in-person support groups to assist you to avoid this. Seeking out like-minded people might offer you the comfort and affirmation you need to achieve your goals.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="static/group.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
